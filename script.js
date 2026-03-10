@@ -1,69 +1,69 @@
-// DOM Elements for enhanced interactions
-document.addEventListener('DOMContentLoaded', function() { 
-    // smooth transitions
-    document.body.style.transition = 'all 0.3s ease';
-    
-    // About section toggle functionality
-    const aboutBtn = document.getElementById('aboutBtn');
-    const aboutSection = document.getElementById('aboutSection');
-    
-    if (aboutBtn && aboutSection) {
-        aboutBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            aboutSection.classList.toggle('active');
-            
-            // Change button text based on state
-            if (aboutSection.classList.contains('active')) {
-                this.textContent = 'FERMER';
-                this.style.background = 'rgba(255, 255, 255, 0.2)';
-            } else {
-                this.textContent = 'À PROPOS';
-                this.style.background = 'rgba(255, 255, 255, 0.1)';
-            }
-        });
-    } else {
-        console.error('About button or section not found!'); // Debug
-    }
-    
-    // hover effects for project cards
-    const projectCards = document.querySelectorAll('.project-card');
-    
-    projectCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px) scale(1.02)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
+document.addEventListener('DOMContentLoaded', function () {
 
-    // button hover effects
-    const buttons = document.querySelectorAll('.btn');
-    
-    buttons.forEach(btn => {
-        btn.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-2px) scale(1.05)';
-        });
-        
-        btn.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
+  // ===== CURSEUR CUSTOM =====
+  const dot = document.getElementById('cursorDot');
 
-    // Smooth scroll for links
-    const links = document.querySelectorAll('a[href^="#"]');
-    
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
+  document.addEventListener('mousemove', function (e) {
+    dot.style.left = e.clientX + 'px';
+    dot.style.top  = e.clientY + 'px';
+  });
+
+  document.addEventListener('mouseenter', function () {
+    dot.style.opacity = '1';
+  });
+
+  document.addEventListener('mouseleave', function () {
+    dot.style.opacity = '0';
+  });
+
+  // Make cursor bigger on interactive elements
+  var interactifs = document.querySelectorAll('a, button, .project-card, .skill-group, .stat-card');
+
+  interactifs.forEach(function (el) {
+    el.addEventListener('mouseenter', function () {
+      dot.style.transform = 'translate(-50%, -50%) scale(3)';
+      dot.style.opacity = '0.4';
     });
+    el.addEventListener('mouseleave', function () {
+      dot.style.transform = 'translate(-50%, -50%) scale(1)';
+      dot.style.opacity = '1';
+    });
+  });
+
+
+  // ===== SCROLL REVEAL =====
+  var revealObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(function (el) {
+    revealObserver.observe(el);
+  });
+
+
+  // ===== NAV ACTIVE AU SCROLL =====
+  var sections = document.querySelectorAll('section[id]');
+  var navLinks  = document.querySelectorAll('.nav-links a');
+
+  var navObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        navLinks.forEach(function (a) {
+          a.classList.remove('active');
+        });
+        var lien = document.querySelector('.nav-links a[href="#' + entry.target.id + '"]');
+        if (lien) lien.classList.add('active');
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(function (s) {
+    navObserver.observe(s);
+  });
+
 });
