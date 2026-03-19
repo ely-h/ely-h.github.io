@@ -91,4 +91,32 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }, { threshold: 0.4 });
 
+  sections.forEach(function (s) { navObserver.observe(s); });
+
+
+  // ===== MODAL IMAGE PROJET =====
+  var overlay    = document.getElementById('modalOverlay');
+  var modalImg   = document.getElementById('modalImg');
+  var modalClose = document.getElementById('modalClose');
+
+  document.querySelectorAll('.project-card[data-img]').forEach(function (card) {
+    card.addEventListener('click', function () {
+      modalImg.src = card.dataset.img;
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeModal() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  modalClose.addEventListener('click', closeModal);
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closeModal();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeModal();
+  });
 });

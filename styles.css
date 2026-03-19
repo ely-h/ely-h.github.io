@@ -777,3 +777,70 @@ footer {
   .hero-cta { flex-direction: column; }
   .btn-primary, .btn-secondary { text-align: center; }
 }
+
+/* ===== MODAL IMAGE PROJET ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 8, 18, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-img-wrap {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  transform: scale(0.96);
+  transition: transform 0.3s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.modal-overlay.open .modal-img-wrap {
+  transform: scale(1);
+}
+
+.modal-img-wrap img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-h);
+  display: block;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--navy);
+  border: 1px solid var(--border-h);
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: none;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.modal-btn-close:hover {
+  color: var(--text);
+  border-color: var(--blue);
+}
+
+.project-card[data-img] {
+  cursor: none;
+}
