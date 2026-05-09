@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-textPrimary font-sans antialiased;
+    cursor: none; /* Hide default cursor to use custom cursor */
+    /* Diagonal stripes background */
+    background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      rgba(186, 230, 253, 0.1) 10px, /* pastelBlue with low opacity */
+      rgba(186, 230, 253, 0.1) 20px
+    );
+  }
+  
+  /* Show default cursor on touch devices where custom cursor isn't useful */
+  @media (pointer: coarse) {
+    body {
+      cursor: auto;
+    }
+  }
+}
+
+/* Custom Cursor Styles */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #bae6fd; /* pastelBlue */
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: width 0.2s, height 0.2s, border-color 0.2s;
+}
+
+.custom-cursor.hovering {
+  width: 48px;
+  height: 48px;
+  border-color: #fef08a; /* pastelYellow */
+  background-color: rgba(254, 240, 138, 0.1);
+}
+
+/* Hide custom cursor on mobile */
+@media (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}
