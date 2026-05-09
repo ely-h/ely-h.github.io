@@ -7,10 +7,10 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-pastelBlue font-bold tracking-widest uppercase text-sm mb-2">07 — Contact</p>
         <h2 className="text-4xl font-bold text-textPrimary mb-8">Entrons en contact.</h2>
-        
+
         <p className="text-lg text-textSecondary max-w-2xl mx-auto mb-12">
-          Je suis activement à la recherche d'une alternance à partir de 
-          <span className="font-bold text-textPrimary"> septembre 2026</span>. 
+          Je suis activement à la recherche d'une alternance à partir de
+          <span className="font-bold text-textPrimary"> septembre 2026</span>.
           Si mon profil vous intéresse ou si vous avez des questions, n'hésitez pas à me contacter !
         </p>
 
@@ -20,7 +20,7 @@ const Contact = () => {
               <Mail size={24} />
             </div>
             <h3 className="font-bold text-textPrimary mb-1">Email</h3>
-            <a href="mailto:twx3jzwha@mozmail.com" className="text-textSecondary hover:text-pastelBlue transition-colors">
+            <a href="srcpmuw0y@mozmail.com" className="text-textSecondary hover:text-pastelBlue transition-colors">
               twx3jzwha@mozmail.com
             </a>
           </div>
@@ -37,18 +37,18 @@ const Contact = () => {
         </div>
 
         <div className="flex justify-center space-x-6">
-          <a 
-            href="https://github.com/ely-h" 
-            target="_blank" 
+          <a
+            href="https://github.com/ely-h"
+            target="_blank"
             rel="noopener noreferrer"
             className="p-4 bg-white rounded-full text-textPrimary hover:bg-pastelBlue/20 hover:text-pastelBlue transition-colors shadow-sm border border-pastelBlue/20"
             aria-label="GitHub"
           >
             <Github size={24} />
           </a>
-          <a 
-            href="https://linkedin.com/in/elyssa-hallou/" 
-            target="_blank" 
+          <a
+            href="https://linkedin.com/in/elyssa-hallou/"
+            target="_blank"
             rel="noopener noreferrer"
             className="p-4 bg-white rounded-full text-textPrimary hover:bg-pastelBlue/20 hover:text-pastelBlue transition-colors shadow-sm border border-pastelBlue/20"
             aria-label="LinkedIn"
