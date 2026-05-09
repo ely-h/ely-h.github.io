@@ -20,7 +20,7 @@ const Contact = () => {
               <Mail size={24} />
             </div>
             <h3 className="font-bold text-textPrimary mb-1">Email</h3>
-            <a href="srcpmuw0y@mozmail.com" className="text-textSecondary hover:text-pastelBlue transition-colors">
+            <a href="mailto:twx3jzwha@mozmail.com" className="text-textSecondary hover:text-pastelBlue transition-colors">
               twx3jzwha@mozmail.com
             </a>
           </div>
