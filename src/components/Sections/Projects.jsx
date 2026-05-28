@@ -12,10 +12,17 @@ const Projects = () => {
     },
     {
       title: 'Newton Plays Pokémon !',
-      description: "Projet personnel inspiré de 'Twitch Plays Pokémon'. Un script Python qui se connecte à l'API Twitch en temps réel et laisse les viewers contrôler un jeu Pokémon via les commandes du chat.",
+      description: "Projet personnel inspiré de 'Twitch Plays Pokémon'. Un script Python qui se connecte à l'API Twitch en temps réel et laisse les viewers contrôler un jeu Pokémon via les commandes du chat. Plus d'info sur github!",
       tech: ['Python', 'API Twitch', 'Automatisation', 'IRC'],
       image: '/img/newton.png',
       link: 'https://github.com/ely-h/newton-plays-pokemon'
+    },
+    {
+      title: 'La Traversée',
+      description: "Jeu multijoueur local massif en 2D, où les survivants doivent traverser une zone hostile pleine de zombies pour atteindre l'arrivée. Serveur node.js et communication des informations entre le serveur, le client et unity via Socket.io. Plus d'info sur github!",
+      tech: ['Unity', 'C#', 'HTML', 'CSS', 'JavaScript', 'Node.js', 'Socket.io'],
+      image: '/img/latraversee.png',
+      link: 'https://github.com/ely-h/la-traversee'
     },
     {
       title: 'Code Game Jam 2026',
@@ -66,14 +73,14 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto">
         <p className="text-pastelBlue font-bold tracking-widest uppercase text-sm mb-2">05 — Projets</p>
         <h2 className="text-4xl font-bold text-textPrimary mb-12">Ce que j'ai construit.</h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <div key={idx} className="bg-white rounded-2xl overflow-hidden border border-pastelBlue/20 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
               <div className="relative h-48 overflow-hidden bg-pastelBlue/10">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   onError={(e) => {
                     e.target.onerror = null;
@@ -81,13 +88,13 @@ const Projects = () => {
                   }}
                 />
               </div>
-              
+
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-bold text-textPrimary mb-3">{project.title}</h3>
                 <p className="text-textSecondary text-sm mb-6 flex-grow leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((t, i) => (
                     <span key={i} className="text-xs font-semibold px-2 py-1 bg-pastelYellow/30 text-textPrimary rounded">
@@ -95,10 +102,10 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 {project.link !== '#' && (
                   <div className="mt-auto pt-4 border-t border-pastelBlue/10">
-                    <a 
+                    <a
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
