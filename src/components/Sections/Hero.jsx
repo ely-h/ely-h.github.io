@@ -12,10 +12,6 @@ const Hero = () => {
         />
       </div>
       
-      <p className="text-pastelBlue font-semibold tracking-wider mb-2 uppercase text-sm">
-        Recherche un contrat d'alternance
-      </p>
-      
       <h1 className="text-5xl md:text-7xl font-extrabold text-textPrimary mb-6 tracking-tight font-flaviotte">
         Elyssa <span className="text-pastelYellow inline-block transform -rotate-2">Hallou</span>
       </h1>

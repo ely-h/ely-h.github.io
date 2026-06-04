@@ -2,12 +2,13 @@ import React from 'react';
 
 const Skills = () => {
   const skillCategories = [
-    { title: 'Langages', skills: ['Python', 'Java', 'PHP', 'C', 'C++', 'C#'] },
-    { title: 'Front-end', skills: ['HTML', 'CSS', 'JavaScript'] },
-    { title: 'Back-end', skills: ['Python', 'PHP', 'API REST', 'Java'] },
-    { title: 'Base de données', skills: ['SQL', 'SQLite', 'MySQL'] },
-    { title: 'Réseau', skills: ['TCP/IP', 'DHCP', 'DNS', 'routage'] },
-    { title: 'Outils', skills: ['GIT', 'Docker', 'Linux', 'UML', 'Figma', 'Proxmox'] },
+    { title: 'Langages', skills: ['Python', 'Bash', 'Java', 'C++', 'C#', 'PHP', 'JavaScript', 'C'] },
+    { title: 'Systèmes & DevOps', skills: ['Linux (Debian)', 'Proxmox (LXC)', 'Docker', 'Ansible', 'GitLab CI/CD', 'Systemd', 'Raspberry Pi'] },
+    { title: 'Réseau & Télécoms', skills: ['SIP / VoIP', 'Asterisk / PBX', 'Linphone', 'ALSA', 'TCP/IP', 'DNS / DHCP', 'Routage'] },
+    { title: 'Back-end & API', skills: ['Python (Asyncio)', 'API REST', 'PHP MVC', 'Java'] },
+    { title: 'Front-end & UI', skills: ['HTML / CSS', 'JavaScript', 'Kivy'] },
+    { title: 'Bases de données', skills: ['SQL', 'MySQL', 'SQLite'] },
+    { title: 'Outils & Méthodes', skills: ['Git', 'Figma', 'Sphinx', 'Agile / Scrum', 'UML'] },
     { title: 'Mobile', skills: ['Android (Java)'] },
     { title: 'Langues', skills: ['Français (C2)', 'Anglais (C1)', 'Allemand (A2)'] },
   ];

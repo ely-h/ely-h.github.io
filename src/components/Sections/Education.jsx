@@ -4,18 +4,18 @@ import { GraduationCap } from 'lucide-react';
 const Education = () => {
   const educations = [
     {
-      date: '09/2026',
-      title: 'L3 MIAGE (Rentrée 2026)',
+      date: ' Rentrée 2026',
+      title: 'L3 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)',
       school: 'Université-Paris-Saclay, Orsay',
       highlight: true
     },
     {
-      date: '2024 - Présent',
+      date: '2024 - 2026',
       title: "BUT Informatique (Parcours: Développement, Conception et Réalisation d'applications)",
       school: "IUT d'Orsay Université-Paris-Saclay. Section anglophone."
     },
     {
-      date: '2024',
+      date: '2021 - 2024',
       title: 'Baccalauréat Général (NSI-MATH, classe européenne)',
       school: 'Lycée Newton, Clichy'
     }

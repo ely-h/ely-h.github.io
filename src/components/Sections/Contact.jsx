@@ -10,8 +10,8 @@ const Contact = () => {
 
         <p className="text-lg text-textSecondary max-w-2xl mx-auto mb-12">
           Je suis activement à la recherche d'une alternance à partir de
-          <span className="font-bold text-textPrimary"> septembre 2026</span>.
-          Si mon profil vous intéresse ou si vous avez des questions, n'hésitez pas à me contacter !
+          <span className="font-bold text-textPrimary"> septembre 2026</span> pour un rythme de 2 semaines en entreprise et 2 semaines en école.
+          Si mon profil vous intéresse, que vous avez des conseils, opportunités ou si vous avez des questions, n'hésitez pas à me contacter ! Je serai ravie de discuter avec vous.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto mb-12">
@@ -31,7 +31,7 @@ const Contact = () => {
             </div>
             <h3 className="font-bold text-textPrimary mb-1">Localisation</h3>
             <p className="text-textSecondary">
-              Paris et périphérie, Île-de-France
+              Clichy, Paris et périphérie, Île-de-France
             </p>
           </div>
         </div>

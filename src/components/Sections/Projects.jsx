@@ -8,7 +8,7 @@ const Projects = () => {
       description: "Plateforme complète (SAE S3) pour la répartition automatique des groupes d'étudiants. Site PHP MVC + API REST, algorithmes de distribution optimisés en Java, et application desktop Java Swing connectée.",
       tech: ['PHP MVC', 'API REST', 'Java', 'Swing', 'MySQL', 'Figma'],
       image: '/img/tdtp.png',
-      link: '#'
+      link: 'https://github.com/ely-h/Creation-groupe-td-et-tp'
     },
     {
       title: 'Newton Plays Pokémon !',
@@ -18,11 +18,32 @@ const Projects = () => {
       link: 'https://github.com/ely-h/newton-plays-pokemon'
     },
     {
+      title: 'Application de gestion pour la CIUP',
+      description: "Application de gestion pour la Cité Internationale Universitaire de Paris. Conception UML avec Visual Paradigm, développement orienté objet en Java Swing.",
+      tech: ['Java', 'Swing', 'UML', 'Programmation Orientée Objet (OOP/POO)', 'Figma'],
+      image: '/img/ciup.png',
+      link: 'https://github.com/ely-h/transverse'
+    },
+    {
       title: 'La Traversée',
       description: "Jeu multijoueur local massif en 2D, où les survivants doivent traverser une zone hostile pleine de zombies pour atteindre l'arrivée. Serveur node.js et communication des informations entre le serveur, le client et unity via Socket.io. Plus d'info sur github!",
       tech: ['Unity', 'C#', 'HTML', 'CSS', 'JavaScript', 'Node.js', 'Socket.io'],
       image: '/img/latraversee.png',
       link: 'https://github.com/ely-h/la-traversee'
+    },
+    {
+      title: 'Étude BDD — IGDB',
+      description: "Analyse et exploitation de la base de données de l'IGDB avec Oracle SQL Developer. Conception de schémas, requêtes complexes, procédures PL/SQL et administration BD.",
+      tech: ['Oracle', 'PL/SQL', 'SQL Developer'],
+      image: '/img/igdb2.png',
+      link: '#'
+    },
+    {
+      title: 'Portfolio',
+      description: "Le site que vous regardez actuellement",
+      tech: ['Tailwind', 'React', 'JavaScript', 'HTML/CSS', 'Vite'],
+      image: '/img/portfolio.png',
+      link: 'https://github.com/ely-h/ely-h.github.io'
     },
     {
       title: 'Code Game Jam 2026',
@@ -32,17 +53,10 @@ const Projects = () => {
       link: 'https://codegamejam.extragames.fr/'
     },
     {
-      title: 'Application Java Swing — CIUP',
-      description: "Application de gestion pour la Cité Internationale Universitaire de Paris. Conception UML avec Visual Paradigm, développement orienté objet en Java Swing.",
-      tech: ['Java', 'Swing', 'UML', 'POO', 'Figma'],
-      image: '/img/ciup.png',
-      link: 'https://github.com/ely-h/transverse'
-    },
-    {
-      title: 'Étude BDD — IGDB',
-      description: "Analyse et exploitation de la base de données de l'IGDB avec Oracle SQL Developer. Conception de schémas, requêtes complexes, procédures PL/SQL et administration BD.",
-      tech: ['Oracle', 'PL/SQL', 'SQL Developer'],
-      image: '/img/igdb.jpg',
+      title: "Mise en place d'un poste pour le developpement",
+      description: "Installation Linux sur Raspberry Pi, configuration MariaDB, gestion de serveur et provisionnement complet d'un environnement de développement.",
+      tech: ['Linux', 'MariaDB', 'Raspberry Pi', 'Bash'],
+      image: '/img/raspi.png',
       link: '#'
     },
     {
@@ -53,14 +67,7 @@ const Projects = () => {
       link: '#'
     },
     {
-      title: "Mise en place d'un poste de dev",
-      description: "Installation Linux sur Raspberry Pi, configuration MariaDB, gestion de serveur et provisionnement complet d'un environnement de développement.",
-      tech: ['Linux', 'MariaDB', 'Raspberry Pi', 'Bash'],
-      image: '/img/raspi.png',
-      link: '#'
-    },
-    {
-      title: 'Site — Atelier Loisirs Animaux',
+      title: 'Site Atelier Loisirs pour Animaux',
       description: "Projet web universitaire - front-end complet pour un atelier de loisirs pour animaux. Cahier des charges, gestion de projet, HTML/CSS avancé et conception UI/UX.",
       tech: ['HTML', 'CSS', 'UI/UX'],
       image: '/img/cwab.png',

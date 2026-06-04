@@ -3,14 +3,14 @@ import { Music, Camera, Palette, Sword, Waves, Activity } from 'lucide-react';
 
 const Hobbies = () => {
   const hobbies = [
-    { name: 'Contrebassiste', icon: <Music size={32} /> },
+    { name: 'Contrebasse', icon: <Music size={32} /> },
+    { name: 'Guitare', icon: <Music size={32} /> },
+    { name: 'Piano', icon: <Music size={32} /> },
     { name: 'Photographie', icon: <Camera size={32} /> },
-    { name: 'Dessin', icon: <Palette size={32} /> },
+    { name: 'Art et Dessin', icon: <Palette size={32} /> },
     { name: 'Jeux de stratégie', icon: <Sword size={32} /> },
     { name: 'Natation', icon: <Waves size={32} /> },
-    { name: 'Guitare', icon: <Music size={32} /> },
     { name: 'Tennis', icon: <Activity size={32} /> },
-    { name: 'Piano', icon: <Music size={32} /> },
   ];
 
   return (
