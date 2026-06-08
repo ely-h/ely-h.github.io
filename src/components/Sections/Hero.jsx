@@ -20,7 +20,7 @@ const Hero = () => {
         Recherche un contrat d'alternance en L3 MIAGE.
         <br className="hidden md:block" />
         <span className="font-medium text-textPrimary bg-pastelYellow/30 px-2 py-1 rounded">
-          Durée 12 mois, rythme 2 semaines entreprise / 2 semaines école.
+          Durée 12 à 36 mois, rythme 2 semaines entreprise / 2 semaines école.
         </span>
       </p>
       
