@@ -4,6 +4,13 @@ import { ExternalLink } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
+      title: 'Skein: Outil de création de GANTT',
+      description: "Outil de planification en diagramme de Gantt fait maison, né du constat que les alternatives en ligne sont souvent payantes ou datées. Développé en React 19 et TypeScript via du vibe-coding assisté par IA, il propose une gestion de projets 100% locale, fluide et visuelle. Plus d'info sur github !",
+      tech: ['React', 'TypeScript', 'Vite', 'Tailwind v4', 'GitHub Actions (CI/CD)'],
+      image: '/img/skein.png',
+      link: 'https://github.com/ely-h/skein'
+    },
+    {
       title: 'Gestionnaire de groupes TD/TP',
       description: "Plateforme complète (SAE S3) pour la répartition automatique des groupes d'étudiants. Site PHP MVC + API REST, algorithmes de distribution optimisés en Java, et application desktop Java Swing connectée.",
       tech: ['PHP MVC', 'API REST', 'Java', 'Swing', 'MySQL', 'Figma'],
