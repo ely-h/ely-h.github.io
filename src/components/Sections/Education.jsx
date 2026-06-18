@@ -5,7 +5,7 @@ const Education = () => {
   const educations = [
     {
       date: ' Rentrée 2026',
-      title: 'L3 MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)',
+      title: 'L3 Informatique, parcours MIAGE (Méthodes Informatiques Appliquées à la Gestion des Entreprises)',
       school: 'Université-Paris-Saclay, Orsay',
       highlight: true
     },
